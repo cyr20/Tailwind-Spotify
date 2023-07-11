@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .header__nav.open {
+    @apply right-0;
+  }
+
+  .branding.open {
+    @apply absolute bottom-12 left-10;
+  }
+
+  .toggle-menu.open {
+    @apply absolute right-4 top-5;
+  }
+}

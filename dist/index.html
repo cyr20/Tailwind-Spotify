@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body class="font-body">
-    <header>
-      <div class="container w-[100%] bg-black p-4 m-auto">
-        <div class="header__wrapper flex justify-between items-center">
-          <div class="branding w-96 h-50">
+    <header class="bg-black p-4 m-auto xl:px-[50px] xl:h-[73px] lg:px-[50px] lg:h-[73px] 2xl:px-[400px] 2xl:max-x-[1170px]">
+      <div class="container">
+        <div class="header__wrapper flex flex-row justify-between">
+          <div class="branding w-96 xl:w-[150rem] lg:w-[150rem]">
             <img src="../images/logo.svg" alt="" />
           </div>
-          <nav class="header__nav flex justify-between absolute p-20 w-[100vw] h-[100vh] top-0 right-[-100vw] bg-black transform ease-in-out">
-            <ul class="text-left gap-4 leading-25">
-              <li><a href="#" class="text-white font-bold text-[36px] hover:text-[#1ed760]">Premium</a></li>
-              <li><a href="#" class="text-white font-bold text-[36px] hover:text-[#1ed760]">Support</a></li>
-              <li><a href="#" class="text-white font-bold text-[36px] hover:text-[#1ed760]">Download</a></li>
-              <span class="block w-6 h-[2px] mb-10 mt-10 bg-white"></span>
-              <li><a href="#" class="text-white font-normal text-[28px] hover:text-[#1ed760]">Sign up</a></li>
-              <li><a href="#" class="text-white font-normal text-[28px] hover:text-[#1ed760]">Log in</a></li>
+          <nav class="header__nav absolute xl:p-0 lg:p-0 w-[100vw] h-[100vh] top-0 right-[-100vw] bg-black xl:bg-transparent transform ease-in-out xl:static xl:h-auto lg:bg-transparent lg:static lg:h-auto lg:mt-2">
+            <ul class="p-20 sm:p-0 text-left gap-4 leading-25 md:flex md:justify-between md:gap-[5rem] xl:flex xl:justify-between xl:gap-0 lg:flex lg:justify-between lg:gap-0">
+              <li class="mr-5"><a href="#" class="text-white font-bold text-[36px] hover:text-[#1ed760] lg:text-[16px] xl:text-[16px]">Premium</a></li>
+              <li class="mr-5"><a href="#" class="text-white font-bold text-[36px] hover:text-[#1ed760] lg:text-[16px] xl:text-[16px]">Support</a></li>
+              <li class="mr-5"><a href="#" class="text-white font-bold text-[36px] hover:text-[#1ed760] lg:text-[16px] xl:text-[16px]">Download</a></li>
+              <span class="block w-6 h-[2px] mb-10 mt-10 bg-white xl:mt-3 xl:rotate-90 xl:h-[1px] xl:w-[18px] lg:mt-3 lg:rotate-90 lg:h-[1px] lg:w-[18px]"></span>
+              <li class="mr-5"><a href="#" class="text-white font-normal text-[28px] md:text-[10px] hover:text-[#1ed760] xl:text-[16px] xl:font-black xl:text-[#d9dadc] lg:text-[16px] lg:font-black lg:text-[#d9dadc]">Sign&nbsp;up</a></li>
+              <li><a href="#" class="text-white font-normal text-[28px] hover:text-[#1ed760] xl:text-[16px] xl:font-black xl:text-[#d9dadc] lg:text-[16px] lg:font-black lg:text-[#d9dadc]">Log&nbsp;in</a></li>
             </ul>
           </nav>
           <div>
-            <button class="toggle-menu block border-0 content-center z-[9999]">
+            <button class="toggle-menu block border-0 content-center z-[9999] xl:hidden lg:hidden">
               <span class="block w-[1.4rem] h-[3px] bg-white mb-1"></span>
               <span class="block w-[1.4rem] h-[3px] bg-white mb-1"></span>
               <span class="block w-[1.4rem] h-[3px] bg-white mb-1"></span>
@@ -35,87 +35,77 @@
       </div>
     </header>
 
-    <section class="banner">
-      <div class="container bg-[#c5f0c9] p-5 pb-[7rem] m-auto">
-        <div class="banner__wrapper">
-          <div class="banner_premium lg:flex-2">
-            <h1 class="py-50 text-[#283ea3] text-[25px] font-black py-5">
+    <section class="banner bg-[#c5f0c9] p-5 pb-[7rem] m-auto md:pb-[80px] xl:pb-[80px] xl:px-[50px] lg:px-[50px] 2xl:px-[400px]">
+      <div class="container">
+        <div class="banner__wrapper xl:flex xl:pt-[3rem] lg:flex lg:pt-[3rem] lg:items-center">
+          <div class="banner_premium">
+            <h1 class="py-50 text-[#283ea3] text-[25px] font-black py-5 md:text-[40px]">
               Get Premium free for 2 months
             </h1>
-            <p class="text-[#283ea3] text-[18px] font-semibold mb-10">
+            <p class="text-[#283ea3] text-[18px] font-semibold mb-10 2xl:text-[24px] 2xl:font-[400]">
               Only $9.99/month after. Cancel anytime.
             </p>
-            <div class="buttons grid grid-cols-1 gap-2">
+            <div class="buttons grid grid-cols-1 gap-2 md:flex">
               <a href=""
-                class="rounded-full bg-[#283ea3] text-[#c5f0c9] text-[14px] font-semibold py-3 mb-1 block text-center hover:scale-[1.04]"
+                class="rounded-full bg-[#283ea3] text-[#c5f0c9] text-[14px] font-semibold py-3 mb-1 block text-center hover:scale-[1.04] md:py-[14px] md:px-[32px]"
               >
                 GET STARTED
               </a>
               <a href=""
-                class="rounded-full border-[#283ea3] border-2 text-[#283ea3] text-[14px] font-semibold py-3 inline-block text-center hover:scale-[1.04]"
+                class="rounded-full border-[#283ea3] border-2 text-[#283ea3] text-[14px] font-semibold py-3 inline-block text-center hover:scale-[1.04] md:py-[14px] md:px-[32px]"
               >
                 VIEW PLANS
               </a>
             </div>
-            <p class="text-[#283ea3] text-[12px] pt-8 pb-20">
-              <u>Terms and conditions apply</u>. Individual plan only.
-              $9.99/month after. 2 months free not available for users who have
-              already tried Premium. Offer ends July 10, 2023.
+            <p class="text-[#283ea3] text-[12px] pt-8 pb-10 xl:max-w-xl lg:max-w-md">
+              <u>Terms and conditions apply</u>.  1 month free not available for users who have already tried Premium.
             </p>
-          </div>
-          <div class="banner_premium__img">
-            <img
-              src="../images/banner-image.png"
-              alt=""
-              class="max-w-full object-scale-down w-80 h-45 ml-[8rem] mt-6"
-            />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="features">
-      <div class="container p-5 pt-8 pb-[4rem]">
+    <section class="features p-5 pt-10 pb-[4rem] xl:px-[50px] xl:pt-[5rem] lg:px-[50px] 2xl:px-[400px]">
+      <div class="container">
         <div class="features__wrapper">
-          <h1 class="flex justify-center text-[28px] font-black tracking-[-0.015em]">Why go Premium?</h1>
-          <div class="banner__content">
-            <div class="features__item flex flex-row mt-8 items-center gap-5">
-              <img src="../images/download.jpg" alt="" class="sm: w-[120px]" />
+          <h1 class="flex justify-center text-[28px] font-black tracking-[-0.015em] xl:text-[40px]">Why go Premium?</h1>
+          <div class="banner__content md:grid md:grid-cols-2 md:items-center xl:grid xl:grid-cols-4">
+            <div class="features__item flex flex-row mt-8 items-center gap-5 xl:flex xl:flex-col xl:text-center">
+              <img src="../images/download.jpg" alt="" class="w-24 md:w-[100px] xl:w-[130px]" />
               <div class="decrip leading-8">
                 <h2 class="text-[21px] font-black tracking-[-0.015em]">Download music.</h2>
                 <p>Listen anywhere</p>
               </div>
             </div>
-            <div class="features__item flex flex-row my-10 items-center gap-5">
-              <img src="../images/ad-free.jpg" alt="" class="sm: w-[120px]" />
+            <div class="features__item flex flex-row my-10 items-center gap-5 md:mt-[5rem] xl:flex xl:flex-col xl:text-center">
+              <img src="../images/ad-free.jpg" alt="" class="w-24 md:w-[100px] xl:w-[130px]" />
               <div class="decrip leading-8">
                 <h2 class="text-[21px] font-black tracking-[-0.015em]">Ad-free music listening.</h2>
                 <p>Enjoy nonstop music.</p>
               </div>
             </div>
-              <div class="features__item flex flex-row my-10 items-center gap-5">
-                <img src="../images/play.jpg" alt="" class="sm: w-[120px]" />
+            <div class="features__item flex flex-row my-10 items-center gap-5 xl:flex xl:flex-col xl:text-center xl:pt-[3rem]">
+                <img src="../images/play.jpg" alt="" class="w-24 md:w-[100px] xl:w-[130px]" />
                 <div class="decrip leading-8">
                 <h2 class="text-[21px] font-black tracking-[-0.015em]">Play any song.</h2>
                 <p>Even on mobile.</p>
               </div>
-              </div>
             </div>
-              <div class="features__item flex flex-row items-center gap-5">
-                <img src="../images/unlimited.jpg" alt="" class="sm: w-[120px]" />
+            <div class="features__item flex flex-row items-center gap-5 xl:flex xl:flex-col xl:text-center xl:pt-[3rem]">
+                <img src="../images/unlimited.jpg" alt="" class="w-24 md:w-[100px] xl:w-[130px]" />
                 <div class="decrip leading-8">
                 <h2 class="text-[21px] font-black tracking-[-0.015em]">Unlimited skips.</h2>
                 <p>Just hit next.</p>
               </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="price">
-      <div class="container bg-[#efefef] p-5 pt-8 pb-[7rem]">
+    <section class="price bg-[#efefef] p-5 pt-8 pb-[7rem] xl:pt-[5rem] 2xl:px-[400px]">
+      <div class="container">
         <div class="price__wrapper">
           <h1 class="flex justify-center text-[28px] font-black tracking-[-0.015em] text-center">Pick your Premium</h1>
           <p class="flex justify-center text-[16px] font-normal text-center">Listen without limits on your phone, speaker, and other devices.</p>
@@ -126,7 +116,7 @@
             <li><img src="../images/discover.svg" alt="" class="bbg-no-repeat object-scale-down w-7"></li>
             <li><img src="../images/paypal.png" alt="" class="bg-no-repeat object-scale-down w-7"></li>
           </ul>
-          <div class="price__wrapper__content grid grid-cols-1 gap-y-3 px-20">
+          <div class="price__wrapper__content grid grid-cols-1 gap-y-3 px:5 sm:px-20 md:px-[135px] xl:px-[45px] xl:grid xl:grid-cols-4 xl:gap-x-4 lg:px-[290px]">
             
             <div class="price__items bg-white rounded-2xl shadow-2xl p-5">
               <span class="rounded bg-[#0c67d3] font-semibold text-white px-3 py-1">2 months free</span>
@@ -136,14 +126,14 @@
 
               <span class="block w-[100%] h-[1px] mb-1 mt-5 bg-black"></span>
 
-              <ul class="my-6 leading-8">
+              <ul class="my-6 leading-8 xl:leading-7">
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Ad-free music listening</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Play anywhere - even offline</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>On-demand playback</p></li>
               </ul>
               <div class="buttons grid grid-cols-1 gap-2">
                 <a href=""
-                  class="rounded-full bg-black text-white text-[14px] font-semibold py-3 block mb-3 text-center hover:scale-[1.04]"
+                  class="rounded-full bg-black text-white text-[14px] font-semibold py-3 block mb-3 text-center hover:scale-[1.04] xl:mt-[140px] 2xl:mt-[140px]"
                 >GET STARTED</a>
               </div>
               </button>
@@ -160,13 +150,13 @@
 
               <span class="block w-[100%] h-[1px] mb-1 mt-5 bg-black"></span>
 
-              <ul class="my-6 leading-8">
+              <ul class="my-6 leading-8 xl:leading-7">
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>2 Premium accounts for a couple under one roof</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Ad-free music listening, play offline, on-demand playback</p></li>
               </ul>
               <div class="buttons grid grid-cols-1 gap-2">
                 <a href=""
-                  class="rounded-full bg-black text-white text-[14px] font-semibold py-3 block mb-3 text-center hover:scale-[1.04]"
+                  class="rounded-full bg-black text-white text-[14px] font-semibold py-3 block mb-3 text-center hover:scale-[1.04] xl:mt-[112px]"
                 >GET STARTED</a>
               </div>
               </button>
@@ -183,7 +173,7 @@
 
               <span class="block w-[100%] h-[1px] mb-1 mt-5 bg-black"></span>
 
-              <ul class="my-6 leading-8">
+              <ul class="my-6 leading-8 xl:leading-7">
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>6 Premium accounts for family members living under one roof</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Block explicit music</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Ad-free music listening, play offline, on-demand playback</p></li>
@@ -208,7 +198,7 @@
 
               <span class="block w-[100%] h-[1px] mb-1 mt-5 bg-black"></span>
 
-              <ul class="my-6 leading-8">
+              <ul class="my-6 leading-8 xl:leading-7">
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Hulu (With Ads) plan</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Ad-free music listening</p></li>
                 <li class="flex"><i class="fa fa-check mt-1 mr-4"></i><p>Play anywhere - even offline</p></li>
@@ -216,7 +206,7 @@
               </ul>
               <div class="buttons grid grid-cols-1 gap-2">
                 <a href=""
-                  class="rounded-full bg-black text-white text-[14px] font-semibold py-3 block mb-3 text-center hover:scale-[1.04]"
+                  class="rounded-full bg-black text-white text-[14px] font-semibold py-3 block mb-3 text-center hover:scale-[1.04] xl:mt-[102px]"
                 >GET STARTED</a>
               </div>
               </button>
@@ -229,55 +219,61 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container bg-black py-10 px-10 pl-7">
+    <footer class="bg-black py-10 px-10 pl-7 xl:px-[50px] lg:px-[50px] 2xl:px-[400px]">
+      <div class="container">
         <div class="footer__wrapper">
-          <div class="branding w-96 h-50 pb-12">
-            <img src="../images/logo.svg" alt="" />
-          </div>
-          <div class="footer__nav grid grid-cols-1 gap-y-9 mb-10">
-            <ul class="leading-10">
-              <li><a href="#" class="text-[#919496] text-[12px] font-black tracking-[.08em]">COMPANY</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">About</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Jobs</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">For the Record</a></li>
-            </ul> 
+          <div class="footer__large xl:grid xl:grid-cols-6 xl:pt-[2rem]">
+            <div class="branding w-96 pb-12 xl:w-[40rem]">
+              <img src="../images/logo.svg" alt="" />
+            </div>
+            <div class="footer__nav__container xl:flex xl:justify-between ">
+              <div class="footer__nav grid grid-cols-1 gap-y-9 mb-10 md:flex md:gap-40 xl:gap-[95px]">
+                <ul class="leading-10">
+                  <li><a href="#" class="text-[#919496] text-[12px] font-black tracking-[.08em]">COMPANY</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">About</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Jobs</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">For the Record</a></li>
+                </ul> 
 
-            <ul class="leading-10">
-              <li><a href="#" class="text-[#919496] text-[12px] font-black tracking-[.08em]">COMMUNITIES</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">For Artists</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Developers</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Advertising</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Investors</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Vendors</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Spotify for Work</a></li>
-            </ul>
+                <ul class="leading-10">
+                  <li><a href="#" class="text-[#919496] text-[12px] font-black tracking-[.08em]">COMMUNITIES</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">For Artists</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Developers</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Advertising</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Investors</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Vendors</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Spotify for Work</a></li>
+                </ul>
 
-            <ul class="leading-10 mb-20">
-              <li><a href="#" class="text-[#919496] text-[12px] font-black tracking-[.08em]">USEFUL LINKS</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Support</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Web Player</a></li>
-              <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Free Mobile App</a></li>
-            </ul>
-            <div class="inline-flex center gap-5">
-              <span class="rounded-[100%] bg-[#222326] w-[48px] h-[48px]"><i class="fa-brands fa-instagram fa-2xl text-white text-center mt-6 ml-2.5 hover:text-[#1ed760]"></i></span>
-              <span class="rounded-[100%] bg-[#222326] w-[48px] h-[48px]"><i class="fa-brands fa-twitter fa-2x text-white text-center mt-[10px] ml-2.5 hover:text-[#1ed760]"></i></span>
-              <span class="rounded-[100%] bg-[#222326] w-[48px] h-[48px]"><i class="fa-brands fa-facebook-f fa-2xl text-white text-center mt-6 ml-3.5 hover:text-[#1ed760]"></i></span>
+                <ul class="leading-10 mb-20">
+                  <li><a href="#" class="text-[#919496] text-[12px] font-black tracking-[.08em]">USEFUL LINKS</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Support</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Web Player</a></li>
+                  <li><a href="#" class="text-white text-[16px] font-normal hover:text-[#1ed760]">Free Mobile App</a></li>
+                </ul>
+              </div>
+
+              <div class="inline-flex center gap-5 xl:ml-[117px]">
+                <span class="rounded-[100%] bg-[#222326] w-[48px] h-[48px]"><i class="fa-brands fa-instagram fa-2xl text-white text-center mt-6 ml-2.5 hover:text-[#1ed760]"></i></span>
+                <span class="rounded-[100%] bg-[#222326] w-[48px] h-[48px]"><i class="fa-brands fa-twitter fa-2x text-white text-center mt-[10px] ml-2.5 hover:text-[#1ed760]"></i></span>
+                <span class="rounded-[100%] bg-[#222326] w-[48px] h-[48px]"><i class="fa-brands fa-facebook-f fa-2xl text-white text-center mt-6 ml-3.5 hover:text-[#1ed760]"></i></span>
+              </div>
             </div>
           </div>
 
-          <li class="flex flex-row-reverse left-0 text-gray-400 text-[12px] font-normal gap-3 items-center hover:text-[#1ed760]"><p>USA</p><i class="fa-solid fa-earth-africa"></i></li>
 
-          <div class="footer__info flex justify-between items-center mt-2">
-            <ul class="leading-10 block justify-between">
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Legal</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Privacy Center</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Privacy Policy</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Cookies</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">About Ads</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Accessibility</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Notice at Collection</a></li>
-              <li><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]">Cookies Settings</a></li>
+          <li class="flex flex-row-reverse left-0 text-gray-400 text-[12px] font-normal gap-3 items-center"><p class="hover:text-[#1ed760]">USA</p><i class="fa-solid fa-earth-africa"></i></li>
+
+          <div class="footer__info flex justify-between mt-2">
+            <ul class="leading-10 block justify-between md:block md:gap-[1rem] lg:flex">
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Legal</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Privacy Center</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Privacy Policy</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Cookies</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">About Ads</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Accessibility</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Notice at Collection</a></div></li>
+              <li><div class="md:flex"><a href="#" class="text-gray-400 text-[12px] font-normal hover:text-[#1ed760]flex items-center">Cookies Settings</a></div></li>
             </ul> 
             <div>
               <p class="text-gray-400 text-[12px] font-normal">© 2023 Spotify AB</p>
